@@ -1,0 +1,364 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+body {
+    font-family:'Noto Sans KR', Arial, Helvetica, sans-serif;
+    background:#fff;
+}
+.blind {
+    display:none;
+}
+
+/*  header  */
+header {
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    background:#000;
+    color:#fff;
+    z-index:10;
+}
+#header_in {
+    min-width:1080px;
+    margin:auto;
+    padding:0 190px;
+    height:80px;
+}
+header h1 {
+    font-size:3em;
+    line-height:80px;
+    float:left;
+    margin-top:25px;
+}
+header h1 a {
+    display:block;
+    width:120px;
+    height:30px;
+    background:url('../img/logo_white.png');
+    background-size:100%;
+}
+
+#nav {
+    float:right;
+    margin-top:30px;
+}
+#nav li {
+    display:inline-block;
+    margin-left:50px;
+}
+#nav a {
+    font-size:14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+}
+#nav a:hover {
+    color:#Fa2828;
+}
+#nav li.inside {
+    margin-right:20px;
+}
+#nav li.inside:after {
+    display:inline-block;
+    content:"";
+    width:1px;
+    height:8px;
+    background:#ccc;
+    margin:0 0 0 40px;
+}
+#nav li.global {
+    margin-left:20px;
+}
+#nav li.global.on a {
+    color:#Fa2828;
+}
+
+
+/*  section  */
+#view {}
+section {
+    position:relative;
+    height:100vh;
+    background-size:cover;
+    background-position:center center;
+}
+
+#section1 {
+    background-image:url('../img/bg_m1.jpg');
+}
+#section2 {
+    background-image:url('../img/bg_m2.jpg');
+}
+#section3 {
+    background-image:url('../img/bg_m3.jpg');
+}
+#section4 {
+    background-image:url('../img/bg_m4.jpg');
+}
+#section5 {
+    background-image:url('../img/bg_m5.jpg');
+}
+#section6 {
+    background-image:url('../img/bg_m6.jpg');
+}
+#section6 .company_info {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+}
+.company_info ul {
+    display:table;
+    width:100%;
+    height:130px;
+}
+.company_info ul li {
+    display:table-cell;
+    width:50%;
+    vertical-align:middle;
+}
+.company_info h4 {
+    display:inline-block;
+    font-size:18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    margin-right:20px;
+    vertical-align:middle;
+}
+.company_info p {
+    display:inline-block;
+    font-size:14px;
+    font-weight:300;
+    vertical-align:middle;
+}
+
+.stock {
+    background:rgba(250, 40, 40, 0.8);
+}
+.stock .stock_in {
+    float:right;
+    width:100%;
+    min-width:540px;
+    padding:0 30px 0 190px;
+}
+.stock p {
+    font-family: 'Montserrat', sans-serif;
+}
+.stock p span {
+    margin-left:5px;
+    vertical-align:middle;
+}
+.stock p span.price {
+    font-size:24px;
+    font-weight:500;
+    margin-left:0;
+    margin-right:10px;
+    vertical-align:middle;
+}
+
+.press {
+    background: rgba(0, 0, 0, 0.8);
+}
+.press .press_in {
+    float:left;
+    width:100%;
+    min-width:540px;
+    padding:0 190px 0 30px;
+}
+.press p {} 
+
+.txtBox {
+    position:absolute;
+    top:50%;
+    left:10%;
+    transform:translateY(-50%);
+    color:#fff;
+}
+.txtBox h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    font-size:45px;
+    margin-bottom:30px;
+}
+.txtBox p {
+    font-size:18px;
+    line-height:27px;
+    font-weight: 300;
+}
+.txtBox .btnDown {
+    display:block;
+    width:36px;
+    height:21px;
+    background:url('../img/sp_common_v3.png') no-repeat 0 -92px;
+    margin-top:40px;
+}
+
+
+/*  footer  */
+footer {
+    position:relative;
+    padding-bottom:50px;
+}
+footer:before {
+    position:absolute;
+    content:"";
+    width:100%;
+    height:1px;
+    background:#ccc;
+    top:52px;
+}
+footer .footer_inner {
+    min-width:1080px;
+    margin:auto;
+    padding:0 190px;
+}
+.footer_notice {
+    padding:18px 0 60px 0;
+}
+.footer_notice p {
+    font-size:14px;
+    color:#494949;
+}
+.footer_notice p strong {
+    font-size:18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    margin-right:20px;
+}
+
+.legal_list {
+    float:left;
+}
+.legal_list li {
+    display:inline-block;
+    margin-right:37px;
+}
+.legal_list li a {
+    font-size:14px;
+    color:#999;
+}
+.legal_list li a strong {
+    color:#494949;
+    font-weight:700;
+}
+
+
+.sub_co_list {
+    float:right;
+}
+.sub_co_list > li {
+    position:relative;
+    display:inline-block;
+    margin-left:59px;
+}
+.sub_co_list > li > a {
+    color:#999;
+    font-family: 'Montserrat', sans-serif;
+    font-size:14px;
+}
+.sub_co_list > li > a:after {
+    display:inline-block;
+    content:"";
+    width:16px;
+    height:16px;
+    background:url('../img/sp_ent_2x.png') no-repeat -33px 0 / 400px auto;
+    margin:2px 0 0 10px;
+    vertical-align:top;
+}
+.sub_co_list > li.active > a {
+    color:#494949;
+}
+.sub_co_list > li.active > a:after {
+    background-position:-227px -27px;
+}
+.sub_co_list > li.active .drop_box_wrap {
+    display:block;
+}
+
+.drop_box_wrap {
+    display:none;
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding-bottom:30px;
+}
+.drop_box {
+    width:170px;
+    padding:15px; background:#fff;
+    border:1px solid #999;
+}
+
+.drop_box ul {
+    height:170px;
+    overflow-y:auto;
+}
+.drop_box li {}
+.drop_box a {
+    color:#999;
+    font-family: 'Montserrat', sans-serif;
+    font-size:12px;
+    line-height:23px;
+    font-weight:500;
+}
+.drop_box a:hover {
+    color:#Fa2828;
+}
+
+
+.copylight {
+    clear:both;
+    padding-top:30px;
+    font-size:14px;
+    font-family: 'Montserrat', sans-serif;
+    color:#999;
+}
+
+
+/*  슬라이드 이미지 왼쪽 버튼  */
+#remote {
+    position:fixed;
+    top:50%;
+    transform:translateY(-50%);
+    left:50px;
+}
+#remote a {
+    display:block;
+    width:8px;
+    height:8px;
+    border:2px solid #fff;
+    margin:10px 0;
+}
+#remote a.active {
+    border:2px solid #Fa2828;
+}
+
+
+/* 스크롤 수치 화면에 직접 보여주기 */
+.s_num {
+    position:fixed;
+    top:100px;
+    left:50px;
+    border-bottom:2px solid yellow;
+    padding-bottom:5px;
+    font-size:30px;
+    color:yellow;
+}
+
+/* 반응형 추가 - 미디어쿼리 */
+@media screen and (max-width:1440px) {
+    #header_in {
+        padding:0 20px;
+    }
+    .company_info h4 {
+        display:block;
+        margin-bottom:10px;
+    }
+    .stock .stock_in {
+        padding:0 30px 0 50px;
+    }
+    .press .pree_in {
+        padding:0 50px 0 30px;
+    }
+}
